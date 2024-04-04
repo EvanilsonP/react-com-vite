@@ -1,4 +1,5 @@
 import { GeoForm } from "./components/GeoForm";
+import { Person } from "./components/Person";
 
 export default function Page() {
     return (
@@ -7,6 +8,7 @@ export default function Page() {
             <h2>Outro texto</h2>
 
             <GeoForm />
+            <Person />
         </div>
     );
 }
