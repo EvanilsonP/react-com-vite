@@ -8,7 +8,11 @@ export default function Page() {
             <h2>Outro texto</h2>
 
             <GeoForm />
-            <Person />
+            <Person 
+                name="Elon Musk"
+                avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkHMB5ECYwHvgPcVehN-eLB6BGl3Nif2u15A9D1Qv9CA&s"
+                roles={["CEO da SpaceX", "CEO da Tesla"]}
+            />
         </div>
     );
 }

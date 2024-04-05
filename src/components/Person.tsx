@@ -2,21 +2,21 @@ const getWeekDay = () => {
     return new Intl.DateTimeFormat('pt-BR', { weekday: 'long'} ).format(new Date());
 };
 
-export function Person() {
-    const data = {
-        name: 'Elon Musk',
-        avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkHMB5ECYwHvgPcVehN-eLB6BGl3Nif2u15A9D1Qv9CA&s',
-        roles: ['CEO da Tesla', 'CEO da SpaceX']
-    };
+type Props = {
+    name: string;
+    avatar: string;
+    roles: string[];
+}
 
+export function Person(props: Props) {
     return (
         <div>
-            <h1>{data.name} + {getWeekDay()}</h1>
-            <img src={data.avatar} alt={data.name} />
+            <h1>{props.name} + {getWeekDay()}</h1>
+            <img src={props.avatar} alt={props.name} />
 
             <ul>
-                <li>{data.roles[0]}</li>
-                <li>{data.roles[1]}</li>
+                <li>{props.roles[0]}</li>
+                <li>{props.roles[1]}</li>
             </ul>
         </div>
     );
