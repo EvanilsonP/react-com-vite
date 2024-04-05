@@ -9,6 +9,7 @@ type Props = {
 }
 
 export function Person(props: Props) {
+
     return (
         <div>
             <h1>{props.name} + {getWeekDay()}</h1>

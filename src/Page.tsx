@@ -1,5 +1,5 @@
-import { GeoForm } from "./components/GeoForm";
-import { Person } from "./components/Person";
+import { Card } from "./components/Card";
+
 
 export default function Page() {
     return (
@@ -7,12 +7,12 @@ export default function Page() {
             <h1 className="font-bold text-2xl bg-black">Olá Mundo!</h1>
             <h2>Outro texto</h2>
 
-            <GeoForm />
-            <Person 
-                name="Elon Musk"
-                avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkHMB5ECYwHvgPcVehN-eLB6BGl3Nif2u15A9D1Qv9CA&s"
-                roles={["CEO da SpaceX", "CEO da Tesla"]}
-            />
+            <Card>
+                <div>
+                    <h3>"Frase de efeito"</h3>
+                    <p>Autor desconhecido</p>
+                </div>
+            </Card>
         </div>
     );
 }
